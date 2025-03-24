@@ -1,0 +1,134 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom Properties */
+:root {
+    /* Colors */
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --text-color: #1f2937;
+    --bg-color: #ffffff;
+    
+    /* Typography */
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+}
+
+/* Utility Classes */
+.container {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Basic Layout */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color);
+    padding: 1rem 0;
+}
+
+main {
+    margin-top: 4rem;
+} 
+
+/* Style personnalisé pour les sections de stages */
+
+#stages {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#stages .stage-card {
+    background: linear-gradient(145deg, rgba(0, 255, 245, 0.1), rgba(0, 255, 245, 0.05));
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 255, 245, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+#stages .stage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 255, 245, 0.4);
+}
+
+#stages .stage-card h3 {
+    font-size: 1.75rem;
+    background: linear-gradient(90deg, #00FFF5, #4FD1C5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#stages .stage-card p {
+    color: #A0AEC0;
+    line-height: 1.8;
+}
+
+#stages .stage-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 255, 245, 0.15), transparent 60%);
+    z-index: -1;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+}

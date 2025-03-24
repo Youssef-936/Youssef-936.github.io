@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projets de Youssef Benouda - Étudiant en BTS SIO SLAM">
+    <title>Projets | Youssef Benouda</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background': '#1A1E23',
+                        'cyan': '#00FFF5',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-white font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 bg-background/90 backdrop-blur-sm z-50 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-cyan font-medium">YB.</a>
+                <div class="flex items-center gap-6">
+                    <a href="index.html" class="text-sm hover:text-cyan transition-colors">Retour à l'accueil</a>
+                    <a href="https://pdfupload.io/docs/aa7cd751" 
+                       target="_blank"
+                       class="inline-flex items-center text-sm text-cyan hover:text-cyan/80 transition-colors">
+                        Voir mon CV
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- En-tête -->
+    <header class="pt-32 pb-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-medium mb-4">Mes Projets</h1>
+            <p class="text-gray-400">Découvrez l'ensemble de mes réalisations techniques</p>
+        </div>
+    </header>
+
+    <!-- Grille de projets -->
+    <main class="px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <!-- Machine Virtuelle Windows -->
+            <div class="group relative overflow-hidden rounded-lg border border-white/5 hover:border-cyan/50 transition-colors">
+                <div class="aspect-video bg-gray-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?w=800" 
+                         alt="Machine Virtuelle Windows" 
+                         class="object-cover w-full h-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                </div>
+                <div class="p-6">
+                    <a href="seven.pdf" target="_blank"><h3 class="text-xl font-medium mb-2">Machine Virtuelle Windows 7</h3></a>
+                    <p class="text-gray-400 mb-4">Création et configuration d'une machine virtuelle Windows 7</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">Virtualisation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serveur MySQL -->
+            <div class="group relative overflow-hidden rounded-lg border border-white/5 hover:border-cyan/50 transition-colors">
+                <div class="aspect-video bg-gray-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800" 
+                         alt="Serveur MySQL" 
+                         class="object-cover w-full h-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                </div>
+                <div class="p-6">
+                    <a href="sucrerie.pdf" target="_blank"><h3 class="text-xl font-medium mb-2">Serveur MySQL Sucrerie</h3></a>
+                    <p class="text-gray-400 mb-4">Mise en place d'un serveur MySQL et création d'une base de données</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Serveur Apache -->
+            <div class="group relative overflow-hidden rounded-lg border border-white/5 hover:border-cyan/50 transition-colors">
+                <div class="aspect-video bg-gray-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800" 
+                         alt="Serveur Apache" 
+                         class="object-cover w-full h-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                </div>
+                <div class="p-6">
+                    <a href="apache.pdf" target="_blank"><h3 class="text-xl font-medium mb-2">Serveur Apache Linux</h3></a>
+                    <p class="text-gray-400 mb-4">Mise en place d'un serveur Apache avec Linux Ubuntu</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">Linux</span>
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">Apache</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculatrice Laravel -->
+            <div class="group relative overflow-hidden rounded-lg border border-white/5 hover:border-cyan/50 transition-colors">
+                <div class="aspect-video bg-gray-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=800" 
+                         alt="Calculatrice Laravel" 
+                         class="object-cover w-full h-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                </div>
+                <div class="p-6">
+                    <a href="calculatrice.pdf" target="_blank"><h3 class="text-xl font-medium mb-2">Calculatrice Laravel</h3></a>
+                    <p class="text-gray-400 mb-4">Création d'une calculatrice en utilisant le framework Laravel</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">Laravel</span>
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">PHP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Site de Location -->
+            <div class="group relative overflow-hidden rounded-lg border border-white/5 hover:border-cyan/50 transition-colors">
+                <div class="aspect-video bg-gray-800 relative overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800" 
+                         alt="Site de Location" 
+                         class="object-cover w-full h-full">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent z-10"></div>
+                </div>
+                <div class="p-6">
+                    <a href="parking.pdf" target="_blank"><h3 class="text-xl font-medium mb-2">Site de Location de Voitures</h3></a>
+                    <p class="text-gray-400 mb-4">Création d'un site de location de voitures avec système d'authentification</p>
+                    <div class="flex gap-2">
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">Laravel</span>
+                        <span class="px-3 py-1 text-sm bg-cyan/10 text-cyan rounded-full">MySQL</span>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </main>
+</body>
+</html> 
